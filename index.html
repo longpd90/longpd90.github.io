@@ -1,9 +1,8 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ja">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Phung Duc Long - Project Manager & Bridge System Engineer with 12 years of experience in Japan">
     <title>Phung Duc Long | PM & BrSE</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
@@ -11,396 +10,464 @@
 </head>
 <body>
 
-    <nav id="navbar">
-        <div class="container nav-inner">
-            <a href="#" class="nav-logo">PDL</a>
-            <button class="menu-toggle" id="menuToggle">&#9776;</button>
-            <ul class="nav-links" id="navLinks">
-                <li><a href="#about">About</a></li>
-                <li><a href="#skills">Skills</a></li>
-                <li><a href="#experience">Experience</a></li>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#education">Education</a></li>
-                <li><a href="#contact" class="nav-cta">Contact</a></li>
-            </ul>
+<nav id="navbar">
+    <div class="container nav-inner">
+        <a href="#" class="nav-logo">PDL</a>
+        <button class="menu-toggle" id="menuToggle">&#9776;</button>
+        <ul class="nav-links" id="navLinks">
+            <li><a href="#about" data-i18n="nav.about">自己紹介</a></li>
+            <li><a href="#skills" data-i18n="nav.skills">スキル</a></li>
+            <li><a href="#experience" data-i18n="nav.experience">職歴</a></li>
+            <li><a href="#projects" data-i18n="nav.projects">案件実績</a></li>
+            <li><a href="#education" data-i18n="nav.education">学歴・資格</a></li>
+            <li><a href="#contact" class="nav-cta" data-i18n="nav.contact">お問い合わせ</a></li>
+        </ul>
+        <div class="lang-toggle">
+            <button id="btn-ja" class="lang-btn active" onclick="setLanguage('ja')">日本語</button>
+            <span class="lang-sep">|</span>
+            <button id="btn-en" class="lang-btn" onclick="setLanguage('en')">EN</button>
         </div>
-    </nav>
+    </div>
+</nav>
 
-    <section id="hero">
-        <div class="container hero-content">
-            <p class="hero-label">Hello, I'm</p>
-            <h1 class="hero-name">Phung Duc Long</h1>
-            <h2 class="hero-title">Project Manager <span class="divider">&</span> Bridge System Engineer</h2>
-            <p class="hero-desc">
-                12 years of experience in software development, based in Yokohama, Japan.<br>
-                Bridging Japanese clients with Vietnamese offshore development teams.
-            </p>
-            <div class="hero-badges">
-                <span class="badge">JLPT N1</span>
-                <span class="badge">10 Years in Japan</span>
-                <span class="badge">iOS Expert</span>
-                <span class="badge">Offshore PM</span>
-            </div>
-            <div class="hero-actions">
-                <a href="#contact" class="btn btn-primary">Get in Touch</a>
-                <a href="#experience" class="btn btn-outline">View Experience</a>
+<section id="hero">
+    <div class="container hero-content">
+        <p class="hero-label" data-i18n="hero.label">はじめまして</p>
+        <h1 class="hero-name">Phung Duc Long</h1>
+        <h2 class="hero-title" data-i18n-html="hero.title">プロジェクトマネージャー <span class="divider">&amp;</span> ブリッジSE</h2>
+        <p class="hero-desc" data-i18n-html="hero.desc">ソフトウェア開発12年の経験を持ち、神奈川県横浜市在住。<br>日本のお客様とベトナムオフショア開発チームをつなぐ架け橋です。</p>
+        <div class="hero-badges">
+            <span class="badge">JLPT N1</span>
+            <span class="badge" data-i18n="hero.badge.years">日本在住10年</span>
+            <span class="badge" data-i18n="hero.badge.ios">iOS開発経験者</span>
+            <span class="badge" data-i18n="hero.badge.pm">オフショアPM</span>
+        </div>
+        <div class="hero-actions">
+            <a href="#contact" class="btn btn-primary" data-i18n="hero.btn.contact">お問い合わせ</a>
+            <a href="#experience" class="btn btn-outline" data-i18n="hero.btn.exp">職歴を見る</a>
+        </div>
+    </div>
+    <div class="hero-scroll"><span>↓</span></div>
+</section>
+
+<main>
+    <section id="about" class="section">
+        <div class="container">
+            <h2 class="section-title"><span class="section-num">01.</span> <span data-i18n="about.title">自己紹介</span></h2>
+            <div class="about-grid">
+                <div class="about-text">
+                    <p data-i18n-html="about.p1"><strong>プロジェクトマネージャー兼ブリッジSE</strong>として12年のソフトウェア開発経験を持ちます。神奈川県横浜市在住で、日本企業とベトナムのオフショア開発チームを繋ぐことを専門としています。</p>
+                    <p data-i18n-html="about.p2">キャリアはiOS開発からスタートし、<strong>TSUTAYAアプリ</strong>・<strong>dカード</strong>・<strong>Dブラウザ</strong>など日本の主要コンシューマーアプリを手掛けました。その後プロジェクト管理へとステップアップし、<strong>数千万円規模</strong>のプロジェクトをリード、<strong>15名以上</strong>のオフショアチームを管理してきました。</p>
+                    <p data-i18n-html="about.p3"><strong>JLPT N1</strong>取得・日本での就業10年以上の経験を通じ、文化的・言語的なギャップを埋め、スケジュール通り・予算内でのプロジェクト完遂を実現します。</p>
+                    <div class="about-hobbies">
+                        <span data-i18n="hobby.1">🏸 バドミントン</span>
+                        <span data-i18n="hobby.2">⚽ サッカー</span>
+                        <span data-i18n="hobby.3">🏔️ 登山（月1回・2026年富士山登頂予定）</span>
+                        <span data-i18n="hobby.4">✈️ 旅行</span>
+                    </div>
+                </div>
+                <div class="about-card">
+                    <h3 data-i18n="about.card">基本情報</h3>
+                    <ul class="info-list">
+                        <li><span class="info-label" data-i18n="info.location">所在地</span><span data-i18n="info.location.val">神奈川県横浜市</span></li>
+                        <li><span class="info-label">Email</span><a href="mailto:longpd90@gmail.com">longpd90@gmail.com</a></li>
+                        <li><span class="info-label" data-i18n="info.lang">言語</span><span data-i18n="info.lang.val">ベトナム語・日本語（N1）・英語</span></li>
+                        <li><span class="info-label" data-i18n="info.exp">経験年数</span><span data-i18n="info.exp.val">12年</span></li>
+                        <li><span class="info-label" data-i18n="info.station">最寄り駅</span><span data-i18n="info.station.val">新子安駅（JR京浜東北線）</span></li>
+                        <li><span class="info-label">GitHub</span><a href="https://github.com/longpd90" target="_blank" rel="noopener">github.com/longpd90</a></li>
+                    </ul>
+                </div>
             </div>
         </div>
-        <div class="hero-scroll"><span>↓</span></div>
     </section>
 
-    <main>
-        <!-- About -->
-        <section id="about" class="section">
-            <div class="container">
-                <h2 class="section-title"><span class="section-num">01.</span> About Me</h2>
-                <div class="about-grid">
-                    <div class="about-text">
-                        <p>I'm a <strong>Project Manager and Bridge System Engineer</strong> with 12 years of experience in the software industry. Based in Yokohama, Japan, I specialize in connecting Japanese businesses with offshore development teams in Vietnam.</p>
-                        <p>My career started in iOS development, working on major Japanese consumer apps including <strong>Tsutaya</strong>, <strong>D Card</strong>, and <strong>D Browser</strong>. Over time I grew into project management, leading projects worth <strong>tens of millions of yen</strong> and managing offshore teams of <strong>15+ engineers</strong>.</p>
-                        <p>With <strong>JLPT N1</strong> certification and 10+ years of working in Japan, I bridge cultural and linguistic gaps to deliver projects on time and on budget. My approach combines deep technical knowledge with business-focused communication.</p>
-                        <div class="about-hobbies">
-                            <span>🏸 Badminton</span>
-                            <span>⚽ Football</span>
-                            <span>🏔️ Hiking (Monthly · Fuji 2026)</span>
-                            <span>✈️ Travel</span>
+    <section id="skills" class="section section-alt">
+        <div class="container">
+            <h2 class="section-title"><span class="section-num">02.</span> <span data-i18n="skills.title">スキル</span></h2>
+            <div class="skills-grid">
+                <div class="skill-card">
+                    <div class="skill-icon">📋</div>
+                    <h3 data-i18n="sk.cat1">マネジメント</h3>
+                    <ul>
+                        <li data-i18n="sk.1.1">プロジェクト管理（PM）</li>
+                        <li data-i18n="sk.1.2">ブリッジSE（BrSE）</li>
+                        <li data-i18n="sk.1.3">スクラム / アジャイル（5年）</li>
+                        <li data-i18n="sk.1.4">オフショアチーム管理</li>
+                        <li data-i18n="sk.1.5">要件定義・顧客折衝</li>
+                        <li data-i18n="sk.1.6">UI/UXコンサルティング</li>
+                        <li data-i18n="sk.1.7">コスト・リスク管理</li>
+                        <li data-i18n="sk.1.8">客先常駐・オンサイト対応</li>
+                        <li data-i18n="sk.1.9">スコープ変更管理・合意形成</li>
+                    </ul>
+                </div>
+                <div class="skill-card">
+                    <div class="skill-icon">📱</div>
+                    <h3 data-i18n="sk.cat2">iOS開発</h3>
+                    <ul>
+                        <li data-i18n="sk.2.1">Objective-C（8年）</li>
+                        <li data-i18n="sk.2.2">Swift（3年）</li>
+                        <li data-i18n="sk.2.3">UIKit（8年）</li>
+                        <li data-i18n="sk.2.4">RxSwift（3年）</li>
+                        <li data-i18n="sk.2.5">Alamofire（3年）</li>
+                        <li data-i18n="sk.2.6">Firebase（5年）</li>
+                        <li data-i18n="sk.2.7">Core Data / SQLite（3年）</li>
+                        <li data-i18n="sk.2.8">SwiftUI（1年）</li>
+                    </ul>
+                </div>
+                <div class="skill-card">
+                    <div class="skill-icon">🏗️</div>
+                    <h3 data-i18n="sk.cat3">アーキテクチャ・DevOps</h3>
+                    <ul>
+                        <li data-i18n="sk.3.1">MVC（6年）</li>
+                        <li data-i18n="sk.3.2">MVVM（3年）</li>
+                        <li data-i18n="sk.3.3">クリーンアーキテクチャ</li>
+                        <li data-i18n="sk.3.4">Git / GitHub（10年）</li>
+                        <li data-i18n="sk.3.5">AWS（3年）</li>
+                        <li data-i18n="sk.3.6">Linux（Ubuntu）</li>
+                        <li data-i18n="sk.3.7">MacOS（12年）</li>
+                    </ul>
+                </div>
+                <div class="skill-card">
+                    <div class="skill-icon">🌐</div>
+                    <h3 data-i18n="sk.cat4">Web・バックエンド</h3>
+                    <ul>
+                        <li>Java</li>
+                        <li>JavaScript / HTML / CSS</li>
+                        <li>Python</li>
+                        <li>PostgreSQL / MySQL</li>
+                        <li>Ruby on Rails</li>
+                        <li>PHP</li>
+                    </ul>
+                </div>
+                <div class="skill-card">
+                    <div class="skill-icon">🤖</div>
+                    <h3 data-i18n="sk.cat5">AI活用</h3>
+                    <ul>
+                        <li data-i18n="sk.5.1">ChatGPT / Claude（日常業務活用）</li>
+                        <li data-i18n="sk.5.2">仕様書・議事録の自動化</li>
+                        <li data-i18n="sk.5.3">AIコード補助（Cursor等）</li>
+                        <li data-i18n="sk.5.4">Prompt Engineering</li>
+                        <li data-i18n="sk.5.5">AI活用による提案・設計効率化</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="experience" class="section">
+        <div class="container">
+            <h2 class="section-title"><span class="section-num">03.</span> <span data-i18n="exp.title">職歴</span></h2>
+            <div class="timeline">
+                <div class="timeline-item">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-body">
+                        <div class="tl-meta">
+                            <span class="tl-period" data-i18n="e0.period">2026年2月〜現在</span>
+                            <span class="tl-tag" data-i18n="e0.tag">Front PM</span>
                         </div>
-                    </div>
-                    <div class="about-card">
-                        <h3>Quick Info</h3>
-                        <ul class="info-list">
-                            <li>
-                                <span class="info-label">Location</span>
-                                <span>Yokohama, Kanagawa, Japan</span>
-                            </li>
-                            <li>
-                                <span class="info-label">Email</span>
-                                <a href="mailto:longpd90@gmail.com">longpd90@gmail.com</a>
-                            </li>
-                            <li>
-                                <span class="info-label">Languages</span>
-                                <span>Vietnamese · Japanese (N1) · English</span>
-                            </li>
-                            <li>
-                                <span class="info-label">Experience</span>
-                                <span>12 Years</span>
-                            </li>
-                            <li>
-                                <span class="info-label">Nearest Station</span>
-                                <span>Shin-Koyasu (JR Keihin-Tohoku Line)</span>
-                            </li>
-                            <li>
-                                <span class="info-label">GitHub</span>
-                                <a href="https://github.com/longpd90" target="_blank" rel="noopener">github.com/longpd90</a>
-                            </li>
+                        <h3 class="tl-company">Miichisoft Japan</h3>
+                        <ul class="tl-points">
+                            <li data-i18n="e0.p1">フロントPMとして日本のお客様との窓口を担当</li>
+                            <li data-i18n="e0.p2">要件定義・提案・プロジェクト全体のコーディネート</li>
+                            <li data-i18n="e0.p3">ベトナムオフショア開発チームとのブリッジ業務</li>
                         </ul>
+                        <div class="tl-tags"><span>PM</span><span>BrSE</span><span>Flutter</span></div>
                     </div>
                 </div>
-            </div>
-        </section>
-
-        <!-- Skills -->
-        <section id="skills" class="section section-alt">
-            <div class="container">
-                <h2 class="section-title"><span class="section-num">02.</span> Skills</h2>
-                <div class="skills-grid">
-                    <div class="skill-card">
-                        <div class="skill-icon">📋</div>
-                        <h3>Management</h3>
-                        <ul>
-                            <li>Project Management (PM)</li>
-                            <li>Bridge SE (BrSE)</li>
-                            <li>Scrum / Agile (5 yrs)</li>
-                            <li>Offshore Team Management</li>
-                            <li>Requirements Definition</li>
-                            <li>UI/UX Consulting</li>
-                            <li>Cost & Risk Management</li>
+                <div class="timeline-item">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-body">
+                        <div class="tl-meta">
+                            <span class="tl-period" data-i18n="e1.period">2023年6月〜2026年2月</span>
+                            <span class="tl-tag">PM / BrSE</span>
+                        </div>
+                        <h3 class="tl-company">bravesoft株式会社</h3>
+                        <ul class="tl-points">
+                            <li data-i18n="e1.p1">PMおよびブリッジSEとして複数のWebシステムプロジェクトをリード</li>
+                            <li data-i18n="e1.p2">要件定義・プロトタイプ作成・日本語でのお客様対応（客先常駐含む）</li>
+                            <li data-i18n="e1.p3">詳細設計書の作成・オフショア開発チームのマネジメント</li>
+                            <li data-i18n="e1.p4">品質管理・進捗管理の実施</li>
+                            <li data-i18n="e1.p5">TMS案件：リソース制約の中で納期前に納品を実現。旧システム障害発生のタイミングに合わせ新システムへスムーズに移行</li>
                         </ul>
+                        <div class="tl-tags"><span>AWS</span><span>Java</span><span>PostgreSQL</span><span>Linux</span></div>
                     </div>
-                    <div class="skill-card">
-                        <div class="skill-icon">📱</div>
-                        <h3>iOS Development</h3>
-                        <ul>
-                            <li>Objective-C (8 yrs)</li>
-                            <li>Swift (3 yrs)</li>
-                            <li>UIKit (8 yrs)</li>
-                            <li>RxSwift (3 yrs)</li>
-                            <li>Alamofire (3 yrs)</li>
-                            <li>Firebase (5 yrs)</li>
-                            <li>Core Data / SQLite (3 yrs)</li>
-                            <li>SwiftUI (1 yr)</li>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-body">
+                        <div class="tl-meta">
+                            <span class="tl-period" data-i18n="e2.period">2022年1月〜2023年5月</span>
+                            <span class="tl-tag">BrSE</span>
+                        </div>
+                        <h3 class="tl-company">株式会社トライアロー</h3>
+                        <ul class="tl-points">
+                            <li data-i18n="e2.p1">基幹システム（営業管理・AIを活用した勤怠OCRシステム）のブリッジSE</li>
+                            <li data-i18n="e2.p2">10名体制でのプロジェクト全工程管理（要件定義〜納品）</li>
+                            <li data-i18n="e2.p3">日本のお客様とベトナムオフショア開発者間の橋渡し</li>
+                            <li data-i18n="e2.p4">仕様書作成・技術的要件の明確化</li>
                         </ul>
+                        <div class="tl-tags"><span>Java</span><span>PostgreSQL</span><span>Linux</span><span>AI/OCR</span></div>
                     </div>
-                    <div class="skill-card">
-                        <div class="skill-icon">🏗️</div>
-                        <h3>Architecture & DevOps</h3>
-                        <ul>
-                            <li>MVC (6 yrs)</li>
-                            <li>MVVM (3 yrs)</li>
-                            <li>Clean Architecture</li>
-                            <li>Git / GitHub (10 yrs)</li>
-                            <li>AWS (3 yrs)</li>
-                            <li>Linux (Ubuntu)</li>
-                            <li>MacOS (12 yrs)</li>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-body">
+                        <div class="tl-meta">
+                            <span class="tl-period" data-i18n="e3.period">2015年9月〜2022年1月</span>
+                            <span class="tl-tag" data-i18n="e3.tag">SE → BrSE</span>
+                        </div>
+                        <h3 class="tl-company">株式会社NTQジャパン支社</h3>
+                        <ul class="tl-points">
+                            <li data-i18n="e3.p1">日本の主要コンシューマーアプリ（数百万人規模）のiOS開発</li>
+                            <li data-i18n="e3.p2">TSUTAYAアプリ — レイアウト刷新 &amp; RxSwift / クリーンアーキテクチャのリファクタリングをリード</li>
+                            <li data-i18n="e3.p3">サブリーダーとして要件定義から納品まで全工程を担当（スクラム）</li>
+                            <li data-i18n="e3.p4">ブリッジSEへ成長し、オフショアチームとのコミュニケーション管理</li>
                         </ul>
+                        <div class="tl-tags"><span>Swift</span><span>Objective-C</span><span>RxSwift</span><span>Firebase</span><span>iOS</span></div>
                     </div>
-                    <div class="skill-card">
-                        <div class="skill-icon">🌐</div>
-                        <h3>Web & Backend</h3>
-                        <ul>
-                            <li>Java</li>
-                            <li>JavaScript / HTML / CSS</li>
-                            <li>Python</li>
-                            <li>PostgreSQL / MySQL</li>
-                            <li>Ruby on Rails</li>
-                            <li>PHP</li>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-body">
+                        <div class="tl-meta">
+                            <span class="tl-period" data-i18n="e4.period">2013年8月〜2015年8月</span>
+                            <span class="tl-tag" data-i18n="e4.tag">iOSエンジニア（PG/SE）</span>
+                        </div>
+                        <h3 class="tl-company">株式会社LifeTimeTech</h3>
+                        <ul class="tl-points">
+                            <li data-i18n="e4.p1">Objective-C / SwiftによるiOSアプリをゼロから開発</li>
+                            <li data-i18n="e4.p2">写真家向けSNS・英語学習アプリ・求人アプリ・駐車ゲームなど開発</li>
+                            <li data-i18n="e4.p3">iOS開発の基礎スキルと日本仕様の開発フローを習得</li>
                         </ul>
+                        <div class="tl-tags"><span>Objective-C</span><span>Swift</span><span>Core Data</span><span>iOS</span></div>
                     </div>
                 </div>
             </div>
-        </section>
+        </div>
+    </section>
 
-        <!-- Experience -->
-        <section id="experience" class="section">
-            <div class="container">
-                <h2 class="section-title"><span class="section-num">03.</span> Experience</h2>
-                <div class="timeline">
-                    <div class="timeline-item">
-                        <div class="timeline-marker"></div>
-                        <div class="timeline-body">
-                            <div class="tl-meta">
-                                <span class="tl-period">Jun 2023 — Present</span>
-                                <span class="tl-tag">PM / BrSE</span>
-                            </div>
-                            <h3 class="tl-company">bravesoft株式会社</h3>
-                            <ul class="tl-points">
-                                <li>Leading multiple web system projects as PM and Bridge SE</li>
-                                <li>Requirements definition, prototype creation, and Japanese client communication</li>
-                                <li>Creating detailed design documents; managing offshore development teams</li>
-                                <li>Quality control and progress management across projects</li>
-                            </ul>
-                            <div class="tl-tags">
-                                <span>AWS</span><span>Java</span><span>PostgreSQL</span><span>Linux</span><span>Python</span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="timeline-item">
-                        <div class="timeline-marker"></div>
-                        <div class="timeline-body">
-                            <div class="tl-meta">
-                                <span class="tl-period">Jan 2022 — May 2023</span>
-                                <span class="tl-tag">BrSE</span>
-                            </div>
-                            <h3 class="tl-company">株式会社トライアロー</h3>
-                            <ul class="tl-points">
-                                <li>Bridge SE for core business systems (sales management, AI-based OCR attendance)</li>
-                                <li>Full lifecycle: requirements → design → delivery with 10-person team</li>
-                                <li>Liaison between Japanese clients and Vietnamese offshore developers</li>
-                                <li>Specification documentation and technical clarification</li>
-                            </ul>
-                            <div class="tl-tags">
-                                <span>Java</span><span>PostgreSQL</span><span>Linux</span><span>AI/OCR</span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="timeline-item">
-                        <div class="timeline-marker"></div>
-                        <div class="timeline-body">
-                            <div class="tl-meta">
-                                <span class="tl-period">Sep 2015 — Jan 2022</span>
-                                <span class="tl-tag">SE → BrSE</span>
-                            </div>
-                            <h3 class="tl-company">株式会社NTQジャパン支社</h3>
-                            <ul class="tl-points">
-                                <li>iOS development on major Japanese consumer apps (multi-million user scale)</li>
-                                <li>Tsutaya App — led layout renewal + RxSwift / Clean Architecture refactoring</li>
-                                <li>Sub-leader: full ownership from requirements through delivery using Scrum</li>
-                                <li>Grew into Bridge SE role; managed offshore team communication</li>
-                            </ul>
-                            <div class="tl-tags">
-                                <span>Swift</span><span>Objective-C</span><span>RxSwift</span><span>Firebase</span><span>iOS</span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="timeline-item">
-                        <div class="timeline-marker"></div>
-                        <div class="timeline-body">
-                            <div class="tl-meta">
-                                <span class="tl-period">Aug 2013 — Aug 2015</span>
-                                <span class="tl-tag">iOS Developer (PG/SE)</span>
-                            </div>
-                            <h3 class="tl-company">株式会社LifeTimeTech</h3>
-                            <ul class="tl-points">
-                                <li>iOS app development from scratch (Objective-C, Swift)</li>
-                                <li>Built photographer social network, English learning app, job search app, parking game</li>
-                                <li>Gained core iOS skills and Japanese-spec development workflow</li>
-                            </ul>
-                            <div class="tl-tags">
-                                <span>Objective-C</span><span>Swift</span><span>Core Data</span><span>iOS</span>
-                            </div>
-                        </div>
-                    </div>
+    <section id="projects" class="section section-alt">
+        <div class="container">
+            <h2 class="section-title"><span class="section-num">04.</span> <span data-i18n="proj.title">案件実績</span></h2>
+            <div class="projects-grid">
+                <div class="project-card">
+                    <div class="project-top"><div class="project-icon">🔮</div><span class="project-year">2026〜</span></div>
+                    <h3 data-i18n="p0.name">占いアプリ（iOS / Android）</h3>
+                    <p data-i18n="p0.desc">ユーザーと占い師をつなぐ占いアプリ。チャット機能・占いメニュー・占い師へのオンライン決済機能を実装。PMおよびBrSEとしてクライアントと開発チームをコーディネート。</p>
+                    <div class="project-tags"><span>PM</span><span>BrSE</span><span>Flutter</span><span>Dart</span></div>
+                </div>
+                <div class="project-card">
+                    <div class="project-top"><div class="project-icon">📺</div><span class="project-year">2022</span></div>
+                    <h3 data-i18n="p1.name">Locipo</h3>
+                    <p data-i18n="p1.desc">名古屋5局（東海テレビ・中京テレビ・CBC・メ〜テレ・テレビ愛知）が共同運営する動画・情報配信サービス。ビジュアル検索・ロケマップ・ニュースメディアの統合機能を追加。</p>
+                    <div class="project-tags"><span>PM</span><span>AWS</span><span>Java</span><span>PostgreSQL</span></div>
+                </div>
+                <div class="project-card">
+                    <div class="project-top"><div class="project-icon">📠</div><span class="project-year">2024</span></div>
+                    <h3 data-i18n="p2.name">TMS — FAX代替システム</h3>
+                    <p data-i18n="p2.desc">既存のFAX送信を置き換える企業向けデジタル通信システム。既読確認・送信ステータス確認機能を実装。プロトタイプ作成・要件定義・チームマネジメントを担当。</p>
+                    <div class="project-tags"><span>PM/BrSE</span><span>AWS</span><span>Java</span><span>PostgreSQL</span></div>
+                </div>
+                <div class="project-card">
+                    <div class="project-top"><div class="project-icon">🎬</div><span class="project-year">2019–2021</span></div>
+                    <h3 data-i18n="p3.name">TSUTAYAアプリ（iOS）</h3>
+                    <p data-i18n="p3.desc">日本を代表するTSUTAYA/CCCの公式iOSアプリ。10名体制でレイアウト全面刷新とRxSwift + クリーンアーキテクチャのリファクタリングをリード。クーポン・Tカード・在庫検索・レンタル履歴機能。</p>
+                    <div class="project-tags"><span>Swift</span><span>RxSwift</span><span>Objective-C</span><span>CoreData</span></div>
+                </div>
+                <div class="project-card">
+                    <div class="project-top"><div class="project-icon">🌐</div><span class="project-year">2018–2019</span></div>
+                    <h3 data-i18n="p4.name">Dブラウザアプリ（iOS）</h3>
+                    <p data-i18n="p4.desc">NTTドコモのdメニューをより便利に使えるブラウザアプリ。スクラムでヒアリングから納品まで担当（サブリーダー）。スクショ撮影・文字サイズ変更・ページ内検索・QRコード読み取り機能。</p>
+                    <div class="project-tags"><span>Objective-C</span><span>Firebase</span><span>Scrum</span><span>iOS</span></div>
+                </div>
+                <div class="project-card">
+                    <div class="project-top"><div class="project-icon">💳</div><span class="project-year">2016–2017</span></div>
+                    <h3 data-i18n="p5.name">dカードアプリ（iOS）</h3>
+                    <p data-i18n="p5.desc">NTTドコモのdカード公式アプリ。高度なセキュリティ要件。Apple Pay連携・dポイントカード表示・自動ログイン・Push通知キャンペーン機能。20名体制。</p>
+                    <div class="project-tags"><span>Objective-C</span><span>ZXingObjC</span><span>Apple Pay</span><span>iOS</span></div>
+                </div>
+                <div class="project-card">
+                    <div class="project-top"><div class="project-icon">💊</div><span class="project-year">2017–2018</span></div>
+                    <h3 data-i18n="p6.name">おくすり手帳（iOS）</h3>
+                    <p data-i18n="p6.desc">お薬情報管理iOSアプリ。調剤明細書のQRコードで簡単登録・薬名検索・服薬スケジューラ・処方箋画像送信機能。ドキュメント不足のレガシーコードを独力で解析・保守。</p>
+                    <div class="project-tags"><span>Objective-C</span><span>SQLite</span><span>iOS</span></div>
                 </div>
             </div>
-        </section>
+        </div>
+    </section>
 
-        <!-- Projects -->
-        <section id="projects" class="section section-alt">
-            <div class="container">
-                <h2 class="section-title"><span class="section-num">04.</span> Notable Projects</h2>
-                <div class="projects-grid">
-                    <div class="project-card">
-                        <div class="project-top">
-                            <div class="project-icon">📺</div>
-                            <span class="project-year">2022</span>
-                        </div>
-                        <h3>Locipo</h3>
-                        <p>Video & information streaming platform for 5 major Nagoya TV stations (東海テレビ, 中京テレビ, CBC, メーテレ, テレビ愛知). Enhanced with visual search, location pin maps, and integrated news media.</p>
-                        <div class="project-tags">
-                            <span>PM</span><span>AWS</span><span>Java</span><span>PostgreSQL</span><span>Python</span>
-                        </div>
+    <section id="education" class="section">
+        <div class="container">
+            <h2 class="section-title"><span class="section-num">05.</span> <span data-i18n="edu.title">学歴・資格</span></h2>
+            <div class="edu-grid">
+                <div class="edu-item">
+                    <div class="edu-icon">🎓</div>
+                    <div class="edu-info">
+                        <h3 data-i18n="edu.school">ハノイ工科大学</h3>
+                        <p class="edu-degree" data-i18n="edu.degree">学士号 — 情報技術学部</p>
+                        <span class="edu-period" data-i18n="edu.period">2008年9月〜2013年10月</span>
                     </div>
-                    <div class="project-card">
-                        <div class="project-top">
-                            <div class="project-icon">📠</div>
-                            <span class="project-year">2024</span>
+                </div>
+                <div class="certs">
+                    <h3 data-i18n="edu.certs">資格</h3>
+                    <div class="cert-grid">
+                        <div class="cert-item">
+                            <div class="cert-badge">SG</div>
+                            <div><p class="cert-name" data-i18n="cert1.name">情報セキュリティマネジメント（SG）</p><p class="cert-org" data-i18n="cert1.org">IPA — 2022年12月</p></div>
                         </div>
-                        <h3>TMS — FAX Replacement System</h3>
-                        <p>Enterprise digital communication system replacing legacy FAX, with read-confirmation and sender status tracking. Led client-facing prototyping, requirements definition, and offshore team management.</p>
-                        <div class="project-tags">
-                            <span>PM/BrSE</span><span>AWS</span><span>Java</span><span>PostgreSQL</span>
+                        <div class="cert-item">
+                            <div class="cert-badge">N1</div>
+                            <div><p class="cert-name" data-i18n="cert2.name">日本語能力試験 N1（JLPT N1）</p><p class="cert-org" data-i18n="cert2.org">JLPT — 2022年8月</p></div>
                         </div>
-                    </div>
-                    <div class="project-card">
-                        <div class="project-top">
-                            <div class="project-icon">🎬</div>
-                            <span class="project-year">2019–2021</span>
-                        </div>
-                        <h3>Tsutaya App (iOS)</h3>
-                        <p>One of Japan's major retail iOS apps (Tsutaya/CCC). Led full layout renewal and RxSwift + Clean Architecture refactoring for a 10-person team. Features: coupons, T-Card, inventory search, rental history.</p>
-                        <div class="project-tags">
-                            <span>Swift</span><span>RxSwift</span><span>Objective-C</span><span>CoreData</span>
-                        </div>
-                    </div>
-                    <div class="project-card">
-                        <div class="project-top">
-                            <div class="project-icon">🌐</div>
-                            <span class="project-year">2018–2019</span>
-                        </div>
-                        <h3>D Browser App (iOS)</h3>
-                        <p>Browser app enhancing NTT Docomo's dmenu experience. Sub-leader from hearing through delivery using Scrum. Features: screenshot, text resize, page search, URL copy, QR code reader.</p>
-                        <div class="project-tags">
-                            <span>Objective-C</span><span>Firebase</span><span>Scrum</span><span>iOS</span>
-                        </div>
-                    </div>
-                    <div class="project-card">
-                        <div class="project-top">
-                            <div class="project-icon">💳</div>
-                            <span class="project-year">2016–2017</span>
-                        </div>
-                        <h3>D Card App (iOS)</h3>
-                        <p>Payment details app for NTT Docomo's D Card. High security environment. Integrated Apple Pay, dPoint card display, auto-login, and push notification campaigns. Team of 20 engineers.</p>
-                        <div class="project-tags">
-                            <span>Objective-C</span><span>ZXingObjC</span><span>Apple Pay</span><span>iOS</span>
-                        </div>
-                    </div>
-                    <div class="project-card">
-                        <div class="project-top">
-                            <div class="project-icon">💊</div>
-                            <span class="project-year">2017–2018</span>
-                        </div>
-                        <h3>おくすり手帳 (Medicine Notebook)</h3>
-                        <p>iOS app for managing medication records. QR code registration from prescription, medicine name search, dosage scheduler, and prescription image transmission to pharmacists.</p>
-                        <div class="project-tags">
-                            <span>Objective-C</span><span>SQLite</span><span>iOS</span>
+                        <div class="cert-item">
+                            <div class="cert-badge">J2</div>
+                            <div><p class="cert-name" data-i18n="cert3.name">ビジネス日本語テスト J2（BJT J2）</p><p class="cert-org" data-i18n="cert3.org">JETRO — 2022年2月</p></div>
                         </div>
                     </div>
                 </div>
             </div>
-        </section>
+        </div>
+    </section>
 
-        <!-- Education -->
-        <section id="education" class="section">
-            <div class="container">
-                <h2 class="section-title"><span class="section-num">05.</span> Education & Certifications</h2>
-                <div class="edu-grid">
-                    <div class="edu-item">
-                        <div class="edu-icon">🎓</div>
-                        <div class="edu-info">
-                            <h3>Hanoi University of Science and Technology</h3>
-                            <p class="edu-degree">Bachelor's Degree — Information Technology</p>
-                            <span class="edu-period">Sep 2008 — Oct 2013</span>
-                        </div>
-                    </div>
-                    <div class="certs">
-                        <h3>Certifications</h3>
-                        <div class="cert-grid">
-                            <div class="cert-item">
-                                <div class="cert-badge">SG</div>
-                                <div>
-                                    <p class="cert-name">Information Security Management</p>
-                                    <p class="cert-org">IPA Japan — Dec 2022</p>
-                                </div>
-                            </div>
-                            <div class="cert-item">
-                                <div class="cert-badge">N1</div>
-                                <div>
-                                    <p class="cert-name">JLPT N1 — Japanese Language Proficiency</p>
-                                    <p class="cert-org">JLPT — Aug 2022</p>
-                                </div>
-                            </div>
-                            <div class="cert-item">
-                                <div class="cert-badge">J2</div>
-                                <div>
-                                    <p class="cert-name">BJT J2 — Business Japanese Test</p>
-                                    <p class="cert-org">JETRO — Feb 2022</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+    <section id="contact" class="section section-alt">
+        <div class="container contact-content">
+            <h2 class="section-title center"><span class="section-num">06.</span> <span data-i18n="contact.title">お問い合わせ</span></h2>
+            <div class="social-links">
+                <a href="mailto:longpd90@gmail.com">longpd90@gmail.com</a>
+                <span class="lang-sep">·</span>
+                <a href="https://www.linkedin.com/in/phung-long-82334773" target="_blank" rel="noopener">LinkedIn</a>
             </div>
-        </section>
+        </div>
+    </section>
+</main>
 
-        <!-- Contact -->
-        <section id="contact" class="section section-alt">
-            <div class="container contact-content">
-                <h2 class="section-title center"><span class="section-num">06.</span> Get In Touch</h2>
-                <p class="contact-desc">I'm currently open to new opportunities in project management and iOS development. Whether you have a project, a question, or just want to say hello — my inbox is always open.</p>
-                <a href="mailto:longpd90@gmail.com" class="btn btn-primary btn-large">Say Hello ✉️</a>
-                <div class="social-links">
-                    <a href="https://github.com/longpd90" target="_blank" rel="noopener">GitHub</a>
-                </div>
-            </div>
-        </section>
-    </main>
+<footer>
+    <p>Designed &amp; Built by Phung Duc Long · 2025</p>
+</footer>
 
-    <footer>
-        <p>Designed & Built by Phung Duc Long · 2025</p>
-    </footer>
+<script>
+const T = {
+    ja: {
+        'nav.about':'自己紹介','nav.skills':'スキル','nav.experience':'職歴','nav.projects':'案件実績','nav.education':'学歴・資格','nav.contact':'お問い合わせ',
+        'hero.label':'はじめまして',
+        'hero.title':'プロジェクトマネージャー <span class="divider">&amp;</span> ブリッジSE',
+        'hero.desc':'ソフトウェア開発12年の経験を持ち、神奈川県横浜市在住。<br>日本のお客様とベトナムオフショア開発チームをつなぐ架け橋です。',
+        'hero.badge.years':'日本在住10年','hero.badge.ios':'iOS開発経験者','hero.badge.pm':'オフショアPM',
+        'hero.btn.contact':'お問い合わせ','hero.btn.exp':'職歴を見る',
+        'about.title':'自己紹介',
+        'about.p1':'<strong>フロントPM兼ブリッジSE</strong>として12年のソフトウェア開発経験を持ちます。神奈川県横浜市在住で、<strong>お客様との直接折衝・常駐対応</strong>を強みに、日本企業とベトナムのオフショア開発チームをつなぐ架け橋として活動しています。',
+        'about.p2':'キャリアはiOS開発からスタートし、<strong>TSUTAYAアプリ</strong>・<strong>dカード</strong>・<strong>Dブラウザ</strong>など日本の主要コンシューマーアプリを手掛けました。その後プロジェクト管理へとステップアップし、<strong>数千万円規模</strong>のプロジェクトをリード、<strong>15名以上</strong>のオフショアチームを管理してきました。',
+        'about.p3':'<strong>JLPT N1</strong>取得・日本での就業10年以上の経験を通じ、文化的・言語的なギャップを埋めます。<strong>客先常駐対応</strong>の経験もあり、お客様と同じ目線で課題を整理・解決します。スコープ変更が発生した際も、俯瞰的な視点でプロジェクト全体を整理し、チームと合意形成を図りながら着地させることを得意としています。また、<strong>AIツールを業務に積極的に活用</strong>し、提案精度・ドキュメント品質の効率化にも取り組んでいます。',
+        'about.card':'基本情報',
+        'info.location':'所在地','info.location.val':'神奈川県横浜市',
+        'info.lang':'言語','info.lang.val':'ベトナム語・日本語（N1）・英語',
+        'info.exp':'経験年数','info.exp.val':'12年',
+        'info.station':'最寄り駅','info.station.val':'新子安駅（JR京浜東北線）',
+        'hobby.1':'🏸 バドミントン','hobby.2':'⚽ サッカー','hobby.3':'🏔️ 登山（月1回・2026年富士山登頂予定）','hobby.4':'✈️ 旅行',
+        'skills.title':'スキル','sk.cat1':'マネジメント','sk.cat2':'iOS開発','sk.cat3':'アーキテクチャ・DevOps','sk.cat4':'Web・バックエンド','sk.cat5':'AI活用',
+        'sk.1.1':'プロジェクト管理（PM）','sk.1.2':'ブリッジSE（BrSE）','sk.1.3':'スクラム / アジャイル（5年）','sk.1.4':'オフショアチーム管理','sk.1.5':'要件定義・顧客折衝','sk.1.6':'UI/UXコンサルティング','sk.1.7':'コスト・リスク管理','sk.1.8':'客先常駐・オンサイト対応','sk.1.9':'スコープ変更管理・合意形成',
+        'e1.p5':'TMS案件：リソース制約の中で納期前に納品を実現。旧システム障害発生のタイミングに合わせ新システムへスムーズに移行',
+        'sk.5.1':'ChatGPT / Claude（日常業務活用）','sk.5.2':'仕様書・議事録の自動化','sk.5.3':'AIコード補助（Cursor等）','sk.5.4':'Prompt Engineering','sk.5.5':'AI活用による提案・設計効率化',
+        'sk.2.1':'Objective-C（8年）','sk.2.2':'Swift（3年）','sk.2.3':'UIKit（8年）','sk.2.4':'RxSwift（3年）','sk.2.5':'Alamofire（3年）','sk.2.6':'Firebase（5年）','sk.2.7':'Core Data / SQLite（3年）','sk.2.8':'SwiftUI（1年）',
+        'sk.3.1':'MVC（6年）','sk.3.2':'MVVM（3年）','sk.3.3':'クリーンアーキテクチャ','sk.3.4':'Git / GitHub（10年）','sk.3.5':'AWS（3年）','sk.3.6':'Linux（Ubuntu）','sk.3.7':'MacOS（12年）',
+        'exp.title':'職歴',
+        'e0.period':'2026年2月〜現在','e0.tag':'Front PM','e0.p1':'フロントPMとして日本のお客様との窓口を担当','e0.p2':'要件定義・提案・プロジェクト全体のコーディネート','e0.p3':'ベトナムオフショア開発チームとのブリッジ業務',
+        'e1.period':'2023年6月〜2026年2月','e1.p1':'PMおよびブリッジSEとして複数のWebシステムプロジェクトをリード','e1.p2':'要件定義・プロトタイプ作成・日本語でのお客様対応','e1.p3':'詳細設計書の作成・オフショア開発チームのマネジメント','e1.p4':'品質管理・進捗管理の実施',
+        'e2.period':'2022年1月〜2023年5月','e2.p1':'基幹システム（営業管理・AIを活用した勤怠OCRシステム）のブリッジSE','e2.p2':'10名体制でのプロジェクト全工程管理（要件定義〜納品）','e2.p3':'日本のお客様とベトナムオフショア開発者間の橋渡し','e2.p4':'仕様書作成・技術的要件の明確化',
+        'e3.period':'2015年9月〜2022年1月','e3.tag':'SE → BrSE','e3.p1':'日本の主要コンシューマーアプリ（数百万人規模）のiOS開発','e3.p2':'TSUTAYAアプリ — レイアウト刷新 &amp; RxSwift / クリーンアーキテクチャのリファクタリングをリード','e3.p3':'サブリーダーとして要件定義から納品まで全工程を担当（スクラム）','e3.p4':'ブリッジSEへ成長し、オフショアチームとのコミュニケーション管理',
+        'e4.period':'2013年8月〜2015年8月','e4.tag':'iOSエンジニア（PG/SE）','e4.p1':'Objective-C / SwiftによるiOSアプリをゼロから開発','e4.p2':'写真家向けSNS・英語学習アプリ・求人アプリ・駐車ゲームなど開発','e4.p3':'iOS開発の基礎スキルと日本仕様の開発フローを習得',
+        'proj.title':'案件実績',
+        'p0.name':'占いアプリ（iOS / Android）','p0.desc':'ユーザーと占い師をつなぐ占いアプリ。チャット機能・占いメニュー・占い師へのオンライン決済機能を実装。PMおよびBrSEとしてクライアントと開発チームをコーディネート。',
+        'p1.name':'Locipo','p1.desc':'名古屋5局（東海テレビ・中京テレビ・CBC・メ〜テレ・テレビ愛知）が共同運営する動画・情報配信サービス。ビジュアル検索・ロケマップ・ニュースメディアの統合機能を追加。',
+        'p2.name':'TMS — FAX代替システム','p2.desc':'既存のFAX送信を置き換える企業向けデジタル通信システム。既読確認・送信ステータス確認機能を実装。プロトタイプ作成・要件定義・チームマネジメントを担当。',
+        'p3.name':'TSUTAYAアプリ（iOS）','p3.desc':'日本を代表するTSUTAYA/CCCの公式iOSアプリ。10名体制でレイアウト全面刷新とRxSwift + クリーンアーキテクチャのリファクタリングをリード。クーポン・Tカード・在庫検索・レンタル履歴機能。',
+        'p4.name':'Dブラウザアプリ（iOS）','p4.desc':'NTTドコモのdメニューをより便利に使えるブラウザアプリ。スクラムでヒアリングから納品まで担当（サブリーダー）。スクショ撮影・文字サイズ変更・ページ内検索・QRコード読み取り機能。',
+        'p5.name':'dカードアプリ（iOS）','p5.desc':'NTTドコモのdカード公式アプリ。高度なセキュリティ要件。Apple Pay連携・dポイントカード表示・自動ログイン・Push通知キャンペーン機能。20名体制。',
+        'p6.name':'おくすり手帳（iOS）','p6.desc':'お薬情報管理iOSアプリ。調剤明細書のQRコードで簡単登録・薬名検索・服薬スケジューラ・処方箋画像送信機能。ドキュメント不足のレガシーコードを独力で解析・保守。',
+        'edu.title':'学歴・資格','edu.school':'ハノイ工科大学','edu.degree':'学士号 — 情報技術学部','edu.period':'2008年9月〜2013年10月','edu.certs':'資格',
+        'cert1.name':'情報セキュリティマネジメント（SG）','cert1.org':'IPA — 2022年12月',
+        'cert2.name':'日本語能力試験 N1（JLPT N1）','cert2.org':'JLPT — 2022年8月',
+        'cert3.name':'ビジネス日本語テスト J2（BJT J2）','cert3.org':'JETRO — 2022年2月',
+        'contact.title':'お問い合わせ','contact.desc':'プロジェクト管理・モバイル開発に関する新しいご縁を心よりお待ちしております。案件のご相談やご質問など、お気軽にご連絡ください。','contact.btn':'メールを送る ✉️'
+    },
+    en: {
+        'nav.about':'About','nav.skills':'Skills','nav.experience':'Experience','nav.projects':'Projects','nav.education':'Education','nav.contact':'Contact',
+        'hero.label':"Hello, I'm",
+        'hero.title':'Project Manager <span class="divider">&amp;</span> Bridge System Engineer',
+        'hero.desc':'12 years of experience in software development, based in Yokohama, Japan.<br>Bridging Japanese clients with Vietnamese offshore development teams.',
+        'hero.badge.years':'10 Years in Japan','hero.badge.ios':'iOS Expert','hero.badge.pm':'Offshore PM',
+        'hero.btn.contact':'Get in Touch','hero.btn.exp':'View Experience',
+        'about.title':'About Me',
+        'about.p1':"I'm a <strong>Front PM and Bridge System Engineer</strong> with 12 years of experience. Based in Yokohama, Japan, I specialize in <strong>direct client-facing communication and on-site engagement</strong>, bridging Japanese businesses with offshore development teams in Vietnam.",
+        'about.p2':'My career started in iOS development, working on major Japanese consumer apps including <strong>Tsutaya</strong>, <strong>D Card</strong>, and <strong>D Browser</strong>. I grew into PM roles, leading projects worth <strong>tens of millions of yen</strong> and managing offshore teams of <strong>15+ engineers</strong>.',
+        'about.p3':'With <strong>JLPT N1</strong> and 10+ years working in Japan, I bridge cultural and linguistic gaps effectively. I have hands-on <strong>on-site client experience</strong>, working directly at client offices to identify and resolve issues in real time. When scope changes arise, I use a bird\'s-eye view to re-prioritize and drive team consensus to a clean landing. I also actively <strong>leverage AI tools</strong> to improve proposal quality and documentation efficiency.',
+        'about.card':'Quick Info',
+        'info.location':'Location','info.location.val':'Yokohama, Kanagawa, Japan',
+        'info.lang':'Languages','info.lang.val':'Vietnamese · Japanese (N1) · English',
+        'info.exp':'Experience','info.exp.val':'12 Years',
+        'info.station':'Nearest Station','info.station.val':'Shin-Koyasu (JR Keihin-Tohoku Line)',
+        'hobby.1':'🏸 Badminton','hobby.2':'⚽ Football','hobby.3':'🏔️ Hiking (Monthly · Fuji 2026)','hobby.4':'✈️ Travel',
+        'skills.title':'Skills','sk.cat1':'Management','sk.cat2':'iOS Development','sk.cat3':'Architecture & DevOps','sk.cat4':'Web & Backend','sk.cat5':'AI Utilization',
+        'sk.1.1':'Project Management (PM)','sk.1.2':'Bridge SE (BrSE)','sk.1.3':'Scrum / Agile (5 yrs)','sk.1.4':'Offshore Team Management','sk.1.5':'Requirements & Client Negotiation','sk.1.6':'UI/UX Consulting','sk.1.7':'Cost & Risk Management','sk.1.8':'On-site Client Engagement','sk.1.9':'Scope Change Management',
+        'e1.p5':'TMS: Delivered ahead of schedule with limited resources — timed perfectly to replace the client\'s legacy system at the moment it failed',
+        'sk.5.1':'ChatGPT / Claude (daily use)','sk.5.2':'Spec docs & meeting notes automation','sk.5.3':'AI code assist (Cursor etc.)','sk.5.4':'Prompt Engineering','sk.5.5':'AI-driven proposal & design efficiency',
+        'sk.2.1':'Objective-C (8 yrs)','sk.2.2':'Swift (3 yrs)','sk.2.3':'UIKit (8 yrs)','sk.2.4':'RxSwift (3 yrs)','sk.2.5':'Alamofire (3 yrs)','sk.2.6':'Firebase (5 yrs)','sk.2.7':'Core Data / SQLite (3 yrs)','sk.2.8':'SwiftUI (1 yr)',
+        'sk.3.1':'MVC (6 yrs)','sk.3.2':'MVVM (3 yrs)','sk.3.3':'Clean Architecture','sk.3.4':'Git / GitHub (10 yrs)','sk.3.5':'AWS (3 yrs)','sk.3.6':'Linux (Ubuntu)','sk.3.7':'MacOS (12 yrs)',
+        'exp.title':'Experience',
+        'e0.period':'Feb 2026 — Present','e0.tag':'Front PM','e0.p1':'Front PM serving as primary point of contact for Japanese clients','e0.p2':'Requirements definition, proposals, and full project coordination','e0.p3':'Bridge work between Japanese clients and Vietnamese offshore development team',
+        'e1.period':'Jun 2023 — Feb 2026','e1.p1':'Leading multiple web system projects as PM and Bridge SE','e1.p2':'Requirements definition, prototype creation, and Japanese client communication (including on-site)','e1.p3':'Creating detailed design docs; managing offshore development teams','e1.p4':'Quality control and progress management',
+        'e2.period':'Jan 2022 — May 2023','e2.p1':'Bridge SE for core business systems (sales management, AI-based OCR attendance)','e2.p2':'Full lifecycle management: requirements → delivery with 10-person team','e2.p3':'Liaison between Japanese clients and Vietnamese offshore developers','e2.p4':'Specification documentation and technical clarification',
+        'e3.period':'Sep 2015 — Jan 2022','e3.tag':'SE → BrSE','e3.p1':'iOS development on major Japanese consumer apps (multi-million user scale)','e3.p2':'Tsutaya App — led layout renewal + RxSwift / Clean Architecture refactoring','e3.p3':'Sub-leader: full ownership from requirements through delivery using Scrum','e3.p4':'Grew into Bridge SE role; managed offshore team communication',
+        'e4.period':'Aug 2013 — Aug 2015','e4.tag':'iOS Developer (PG/SE)','e4.p1':'iOS app development from scratch (Objective-C, Swift)','e4.p2':'Built photographer SNS, English learning app, job search app, parking game','e4.p3':'Gained core iOS skills and Japanese-spec development workflow',
+        'proj.title':'Notable Projects',
+        'p0.name':'Fortune Telling App (iOS / Android)','p0.desc':'Mobile app connecting users with fortune tellers. Features: real-time chat, fortune-telling menus, and online payment to fortune tellers. Served as PM and BrSE coordinating client and offshore dev team.',
+        'p1.name':'Locipo','p1.desc':'Video & information streaming for 5 major Nagoya TV stations (東海テレビ, 中京テレビ, CBC, メーテレ, テレビ愛知). Enhanced with visual search, location pin maps, and integrated news media.',
+        'p2.name':'TMS — FAX Replacement System','p2.desc':'Enterprise digital communication system replacing legacy FAX, with read-confirmation and sender status tracking. Led prototyping, requirements definition, and team management.',
+        'p3.name':'Tsutaya App (iOS)','p3.desc':"Major retail iOS app (Tsutaya/CCC). Led full layout renewal and RxSwift + Clean Architecture refactoring with 10-person team. Features: coupons, T-Card, inventory search, rental history.",
+        'p4.name':'D Browser App (iOS)','p4.desc':"Browser app enhancing NTT Docomo's dmenu. Sub-leader from hearing through delivery using Scrum. Features: screenshot, text resize, page search, QR code reader.",
+        'p5.name':'D Card App (iOS)','p5.desc':"NTT Docomo's D Card official app. High security requirements. Apple Pay, dPoint card, auto-login, push notification campaigns. Team of 20.",
+        'p6.name':'Medicine Notebook (iOS)','p6.desc':'Medication record iOS app. QR code registration from prescription, medicine search, dosage scheduler, prescription image transmission to pharmacists.',
+        'edu.title':'Education & Certifications','edu.school':'Hanoi University of Science and Technology','edu.degree':"Bachelor's Degree — Information Technology",'edu.period':'Sep 2008 — Oct 2013','edu.certs':'Certifications',
+        'cert1.name':'Information Security Management (SG)','cert1.org':'IPA Japan — Dec 2022',
+        'cert2.name':'JLPT N1 — Japanese Language Proficiency','cert2.org':'JLPT — Aug 2022',
+        'cert3.name':'BJT J2 — Business Japanese Test','cert3.org':'JETRO — Feb 2022',
+        'contact.title':'Get In Touch','contact.desc':"I'm open to new opportunities in project management and mobile development. Have a project or just want to say hello? My inbox is always open.",'contact.btn':'Say Hello ✉️'
+    }
+};
 
-    <script>
-        window.addEventListener('scroll', () => {
-            const navbar = document.getElementById('navbar');
-            navbar.classList.toggle('scrolled', window.scrollY > 50);
-        });
+function setLanguage(lang) {
+    document.documentElement.lang = lang;
+    localStorage.setItem('cv-lang', lang);
+    document.querySelectorAll('[data-i18n]').forEach(el => {
+        const v = T[lang][el.getAttribute('data-i18n')];
+        if (v !== undefined) el.textContent = v;
+    });
+    document.querySelectorAll('[data-i18n-html]').forEach(el => {
+        const v = T[lang][el.getAttribute('data-i18n-html')];
+        if (v !== undefined) el.innerHTML = v;
+    });
+    document.getElementById('btn-ja').classList.toggle('active', lang === 'ja');
+    document.getElementById('btn-en').classList.toggle('active', lang === 'en');
+}
 
-        document.getElementById('menuToggle').addEventListener('click', () => {
-            document.getElementById('navLinks').classList.toggle('open');
-        });
+const initLang = localStorage.getItem('cv-lang') || 'ja';
+setLanguage(initLang);
 
-        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-            anchor.addEventListener('click', function (e) {
-                const href = this.getAttribute('href');
-                if (href === '#') return;
-                e.preventDefault();
-                const target = document.querySelector(href);
-                if (target) {
-                    target.scrollIntoView({ behavior: 'smooth' });
-                    document.getElementById('navLinks').classList.remove('open');
-                }
-            });
-        });
-    </script>
+window.addEventListener('scroll', () => {
+    document.getElementById('navbar').classList.toggle('scrolled', window.scrollY > 50);
+});
+document.getElementById('menuToggle').addEventListener('click', () => {
+    document.getElementById('navLinks').classList.toggle('open');
+});
+document.querySelectorAll('a[href^="#"]').forEach(a => {
+    a.addEventListener('click', function(e) {
+        const href = this.getAttribute('href');
+        if (href === '#') return;
+        e.preventDefault();
+        const t = document.querySelector(href);
+        if (t) { t.scrollIntoView({ behavior: 'smooth' }); document.getElementById('navLinks').classList.remove('open'); }
+    });
+});
+</script>
 </body>
 </html>
